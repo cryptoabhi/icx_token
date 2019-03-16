@@ -41,9 +41,9 @@ class TokenFallbackInterface(InterfaceScore):
 
 class SampleToken(IconScoreBase, TokenStandard):
 
-    _BALANCES = 'balances'
-    _TOTAL_SUPPLY = 'total_supply'
-    _DECIMALS = 'decimals'
+    _BALANCES = '100000'
+    _TOTAL_SUPPLY = '100000000'
+    _DECIMALS = '10'
 
     @eventlog(indexed=3)
     def Transfer(self, _from: Address, _to: Address, _value: int, _data: bytes):
